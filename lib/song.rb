@@ -43,8 +43,7 @@ class Song
   end
 
   def self.alphabetical
-    self.all.collect do |song|
-      song.name.sort
+    self.all.name.sort
     end
   end
 
