@@ -51,10 +51,9 @@ class Song
     artist_name = filename_array[0]
     name_with_mp3 = filename_array[1]
     name = name_with_mp3.split(".").shift
-    binding.pry
     song = self.new
-    song.artist_name = filename[0]
-    song.name = filename[1]
+    song.artist_name = artist_name
+    song.name = name
 
   end
 
