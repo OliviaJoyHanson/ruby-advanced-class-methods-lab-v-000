@@ -42,4 +42,10 @@ class Song
     end
   end
 
+  def self.alphabetical
+    self.all.collect do |song|
+      song.sort
+    end
+  end
+
 end
